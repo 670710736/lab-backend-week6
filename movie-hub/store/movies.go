@@ -3,13 +3,13 @@ package store
 import "context"
 
 type Movie struct {
-	ID      int64   json:"id"
-	Title   string  json:"title"
-	TitleTh *string json:"titleTh"
-	Genre   *string json:"genre"
-	Year    *int    json:"year"
-	Rating  float64 json:"rating"
-	Poster  *string json:"poster"
+	ID      int64   `json:"id"`
+	Title   string  `json:"title"`
+	TitleTh *string `json:"titleTh"`
+	Genre   *string `json:"genre"`
+	Year    *int    `json:"year"`
+	Rating  float64 `json:"rating"`
+	Poster  *string `json:"poster"`
 }
 
 // SearchMovies ค่าจากผู้ใช้เดินทางผ่าน $1 แยกจากคำสั่งเสมอ
